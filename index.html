@@ -5,52 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ekologiczny Ogródek</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
+    <header>
+        <h1>🌱 Ekologiczny Ogródek</h1>
+        <p>Twoje miejsce, by uprawiać zdrowe warzywa w zgodzie z naturą!</p>
+    </header>
+
     <nav>
         <ul>
-            <li><a href="#" onclick="showPage('home')">Strona Główna</a></li>
-            <li><a href="#" onclick="showPage('rules')">Przykazania</a></li>
-            <li><a href="#" onclick="showPage('videos')">Filmy</a></li>
-            <li><a href="#" onclick="showPage('about')">O nas</a></li>
-            <li><a href="#" onclick="showPage('contact')">Kontakt</a></li>
+            <li><a href="#" onclick="showPage('home')">🏡 Strona Główna</a></li>
+            <li><a href="#" onclick="showPage('rules')">📜 Przykazania</a></li>
+            <li><a href="#" onclick="showPage('vegetables')">🥕 Uprawa Warzyw</a></li>
+            <li><a href="#" onclick="showPage('videos')">🎥 Filmy</a></li>
+            <li><a href="#" onclick="showPage('about')">ℹ️ O nas</a></li>
+            <li><a href="#" onclick="showPage('contact')">📩 Kontakt</a></li>
         </ul>
     </nav>
 
     <section id="home" class="page active">
-        <h1>Witaj w Ekologicznym Ogródku!</h1>
-        <p>Odkryj, jak uprawiać rośliny w zgodzie z naturą.</p>
+        <h2>🌍 Witaj w ekologicznym świecie!</h2>
+        <p>Dowiedz się, jak uprawiać zdrowe i smaczne warzywa bez użycia chemii.</p>
+        <img src="garden.jpg" alt="Ogródek ekologiczny">
     </section>
 
     <section id="rules" class="page">
-        <h2>10 przykazań ekologicznego ogrodnika</h2>
+        <h2>📜 10 Przykazań Ekologicznego Ogrodnika</h2>
         <ol>
-            <li>Używaj naturalnych nawozów (kompost, obornik).</li>
-            <li>Unikaj chemicznych środków ochrony roślin.</li>
+            <li>Kompostuj resztki – naturalny nawóz to podstawa.</li>
+            <li>Unikaj pestycydów – stosuj naturalne środki ochronne.</li>
             <li>Oszczędzaj wodę – zbieraj deszczówkę.</li>
-            <li>Uprawiaj rośliny rodzime i odporne.</li>
-            <li>Twórz własne naturalne środki ochronne (np. wywary z pokrzywy).</li>
-            <li>Sadź rośliny przyciągające pszczoły i motyle.</li>
-            <li>Dbaj o różnorodność biologiczną w swoim ogrodzie.</li>
-            <li>Nie wypalaj traw – twórz naturalne siedliska dla owadów.</li>
-            <li>Kompostuj odpady organiczne.</li>
-            <li>Dbaj o zdrową glebę – nie przekopuj jej zbyt głęboko.</li>
+            <li>Sadź warzywa w mieszanych uprawach.</li>
+            <li>Dbaj o różnorodność – przyciągaj owady zapylające.</li>
+            <li>Nie przekopuj głęboko ziemi – zachowaj strukturę gleby.</li>
+            <li>Uprawiaj rośliny odporne na warunki klimatyczne.</li>
+            <li>Stosuj płodozmian, by uniknąć wyjałowienia gleby.</li>
+            <li>Ogranicz plastik – używaj biodegradowalnych doniczek.</li>
+            <li>Ciesz się ogrodem i dziel się plonami! 🌿</li>
         </ol>
     </section>
 
+    <section id="vegetables" class="page">
+        <h2>🥕 Jak uprawiać warzywa ekologicznie?</h2>
+        <p>Podstawowe zasady zdrowej uprawy:</p>
+        <ul>
+            <li><strong>Marchew:</strong> Lubi lekką, piaszczystą glebę i dużo słońca.</li>
+            <li><strong>Pomidor:</strong> Wymaga podpór i regularnego podlewania.</li>
+            <li><strong>Sałata:</strong> Rośnie szybko i najlepiej smakuje świeża.</li>
+            <li><strong>Ogórek:</strong> Potrzebuje ciepłego miejsca i dużej ilości wody.</li>
+            <li><strong>Fasola:</strong> Poprawia jakość gleby dzięki wiązaniu azotu.</li>
+        </ul>
+        <img src="vegetables.jpg" alt="Ekologiczne warzywa">
+    </section>
+
     <section id="videos" class="page">
-        <h2>Galeria wideo</h2>
-        <p>Wkrótce pojawią się tutaj poradniki wideo!</p>
+        <h2>🎥 Galeria Wideo</h2>
+        <p>Wkrótce dodamy poradniki video!</p>
     </section>
 
     <section id="about" class="page">
-        <h2>O nas</h2>
-        <p>Jesteśmy pasjonatami ekologii i naturalnego ogrodnictwa. Naszym celem jest inspirowanie innych do uprawy roślin w zgodzie z naturą.</p>
+        <h2>ℹ️ O nas</h2>
+        <p>Jesteśmy pasjonatami ekologii i ogrodnictwa. Tworzymy ten projekt, by pomóc ludziom uprawiać zdrową żywność.</p>
     </section>
 
     <section id="contact" class="page">
-        <h2>Kontakt</h2>
+        <h2>📩 Kontakt</h2>
         <form>
             <label for="name">Imię:</label>
             <input type="text" id="name" required>
@@ -65,6 +86,5 @@
         </form>
     </section>
 
-    <script src="script.js"></script>
 </body>
 </html>
