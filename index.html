@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekologiczny Ogródek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showPage('home')">Strona Główna</a></li>
+            <li><a href="#" onclick="showPage('rules')">Przykazania</a></li>
+            <li><a href="#" onclick="showPage('videos')">Filmy</a></li>
+            <li><a href="#" onclick="showPage('about')">O nas</a></li>
+            <li><a href="#" onclick="showPage('contact')">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="page active">
+        <h1>Witaj w Ekologicznym Ogródku!</h1>
+        <p>Odkryj, jak uprawiać rośliny w zgodzie z naturą.</p>
+    </section>
+
+    <section id="rules" class="page">
+        <h2>10 przykazań ekologicznego ogrodnika</h2>
+        <ol>
+            <li>Używaj naturalnych nawozów (kompost, obornik).</li>
+            <li>Unikaj chemicznych środków ochrony roślin.</li>
+            <li>Oszczędzaj wodę – zbieraj deszczówkę.</li>
+            <li>Uprawiaj rośliny rodzime i odporne.</li>
+            <li>Twórz własne naturalne środki ochronne (np. wywary z pokrzywy).</li>
+            <li>Sadź rośliny przyciągające pszczoły i motyle.</li>
+            <li>Dbaj o różnorodność biologiczną w swoim ogrodzie.</li>
+            <li>Nie wypalaj traw – twórz naturalne siedliska dla owadów.</li>
+            <li>Kompostuj odpady organiczne.</li>
+            <li>Dbaj o zdrową glebę – nie przekopuj jej zbyt głęboko.</li>
+        </ol>
+    </section>
+
+    <section id="videos" class="page">
+        <h2>Galeria wideo</h2>
+        <p>Wkrótce pojawią się tutaj poradniki wideo!</p>
+    </section>
+
+    <section id="about" class="page">
+        <h2>O nas</h2>
+        <p>Jesteśmy pasjonatami ekologii i naturalnego ogrodnictwa. Naszym celem jest inspirowanie innych do uprawy roślin w zgodzie z naturą.</p>
+    </section>
+
+    <section id="contact" class="page">
+        <h2>Kontakt</h2>
+        <form>
+            <label for="name">Imię:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+            
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" required></textarea>
+            
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
