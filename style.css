@@ -12,10 +12,10 @@ body {
 header {
     background-color: #4CAF50; /* Zielony */
     color: white;
-    padding: 20px; /* Zmniejszenie przestrzeni wewnętrznej */
+    padding: 10px; /* Zmniejszenie przestrzeni wewnętrznej */
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Cień dla nagłówka */
-    font-size: 24px; /* Zmniejszenie rozmiaru czcionki */
+    font-size: 14px; /* Zmniejszenie rozmiaru czcionki */
 }
 
 
