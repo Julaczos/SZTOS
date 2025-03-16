@@ -1,6 +1,6 @@
 /* Gradient na tle */
 body {
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Arial', sans-serif;
     background: linear-gradient(to bottom right, #4c669f, #3b5998, #192f6a);
     color: #fff;
     margin: 0;
@@ -52,9 +52,31 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Animacja przejścia między stronami */
+/* Style sekcji */
+section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-/* Style tabeli */
+/* Przycisk w kontakcie */
+button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff5722;
+}
+
+/* Tabela z roślinami */
 .calendar-table {
     margin: 30px auto;
     border-collapse: collapse;
@@ -86,48 +108,7 @@ nav ul li a:hover {
     transition: background-color 0.3s ease;
 }
 
-/* Gradient tła dla sekcji */
-section {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 40px;
-    border-radius: 10px;
-    margin: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Przycisk w kontakcie */
-button {
-    background-color: #ff9800;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #ff5722;
-}
-
-/* Dodanie animacji do tła */
-@keyframes gradientAnimation {
-    0% {
-        background: linear-gradient(to bottom right, #4c669f, #3b5998, #192f6a);
-    }
-    50% {
-        background: linear-gradient(to bottom right, #192f6a, #3b5998, #4c669f);
-    }
-    100% {
-        background: linear-gradient(to bottom right, #4c669f, #3b5998, #192f6a);
-    }
-}
-
-body {
-    animation: gradientAnimation 10s ease infinite;
-}
-
-/* Dodanie efektu dla tła przycisków */
+/* Styl dla przycisków nawigacji */
 nav ul li a {
     font-weight: bold;
     position: relative;
@@ -150,4 +131,15 @@ nav ul li a::after {
 nav ul li a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+/* Sekcje przejściowe - bez animacji */
+.page {
+    opacity: 1;
+    visibility: visible;
+}
+
+.page.active {
+    opacity: 1;
+    visibility: visible;
 }
