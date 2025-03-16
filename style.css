@@ -211,3 +211,30 @@ input:focus, textarea:focus {
         width: 100%;
     }
 }
+
+
+.vegetables-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vegetables-table th, .vegetables-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 16px;
+}
+
+.vegetables-table th {
+    background-color: #f2f2f2;
+}
+
+.vegetables-table td {
+    background-color: #fff;
+}
+
+.vegetables-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
