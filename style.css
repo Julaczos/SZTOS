@@ -1,21 +1,26 @@
+/* Ustawienia ogólne */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #eef7e7;
+    background-color: #eef7e7; /* Zielonkawe tło */
     color: #2c3e50;
+    line-height: 1.6; /* Zwiększenie przestrzeni między liniami */
 }
 
+/* Nagłówek */
 header {
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Zielony */
     color: white;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Cień dla nagłówka */
 }
 
+/* Nawigacja */
 nav {
-    background-color: #388E3C;
-    padding: 10px;
+    background-color: #388E3C; /* Zielony */
+    padding: 15px 0;
 }
 
 nav ul {
@@ -25,66 +30,90 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 nav ul li a:hover {
+    color: #f39c12; /* Zmiana koloru na pomarańczowy przy hover */
     text-decoration: underline;
 }
 
+/* Sekcje */
 .page {
     display: none;
     padding: 20px;
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .page.active {
     display: block;
 }
 
+/* Styl obrazków */
 img {
     width: 80%;
     max-width: 600px;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Cień wokół obrazków */
+    transition: transform 0.3s ease-in-out; /* Animacja transformacji */
 }
 
+img:hover {
+    transform: scale(1.05); /* Powiększenie obrazka po najechaniu */
+}
+
+/* Przyciski */
 button {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 25px;
     cursor: pointer;
-    margin-top: 10px;
-    border-radius: 5px;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
-    background-color: #388E3C;
+    background-color: #388E3C; /* Ciemniejszy zielony */
+    transform: scale(1.1); /* Powiększenie przy kliknięciu */
 }
 
+/* Formularze */
 form {
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 450px;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
 }
 
 input, textarea {
-    margin-bottom: 10px;
-    padding: 8px;
+    margin-bottom: 15px;
+    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 16px;
 }
 
+input:focus, textarea:focus {
+    border-color: #4CAF50; /* Zielony kolor obramowania przy focusie */
+    outline: none;
+}
+
+/* Kalendarz */
 #vegetables-calendar {
     text-align: center;
 }
@@ -93,12 +122,14 @@ input, textarea {
     margin: 20px auto;
     border-collapse: collapse;
     width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .calendar-table th, .calendar-table td {
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
     text-align: center;
+    font-size: 16px;
 }
 
 .calendar-table th {
@@ -113,31 +144,68 @@ input, textarea {
     background-color: #f9f9f9;
 }
 
-/* Dodanie stylu CSS dla sekcji */
+/* Sekcja "Indoor Gardening" */
 #indoor-gardening {
-    max-width: 650px; /* Maksymalna szerokość kontenera */
-    margin: 0 auto; /* Wyśrodkowanie sekcji */
-    padding: 20px; /* Dodanie przestrzeni wewnętrznej */
-    font-family: Arial, sans-serif; /* Zmiana czcionki */
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Cień */
+    font-family: 'Arial', sans-serif;
 }
 
-/* Stylowanie nagłówków */
 #indoor-gardening h2, #indoor-gardening h3 {
-    text-align: center; /* Wyśrodkowanie nagłówków */
-    color: #2c6f2d; /* Zmiana koloru tekstu */
+    text-align: center;
+    color: #2c6f2d; /* Ciemnozielony */
+    font-size: 2em;
 }
 
-/* Stylowanie list i innych elementów */
 #indoor-gardening p, #indoor-gardening ul {
-    line-height: 1.6; /* Zwiększenie przestrzeni między wierszami */
-    font-size: 16px; /* Zwiększenie rozmiaru czcionki */
+    font-size: 16px;
+    color: #555; /* Szary kolor tekstu */
 }
 
-/* Stylowanie obrazków */
+#indoor-gardening ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
 #indoor-gardening img {
-    width: 100%; /* Dopasowanie obrazków do szerokości kontenera */
-    max-width: 600px; /* Maksymalna szerokość obrazków */
-    display: block; /* Zapewnienie wyświetlania obrazków jako blok */
-    margin: 20px auto; /* Wyśrodkowanie obrazków */
+    width: 100%;
+    max-width: 650px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
+#indoor-gardening img:hover {
+    transform: scale(1.05); /* Powiększenie obrazka przy najechaniu */
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #indoor-gardening {
+        padding: 10px;
+    }
+
+    h2, h3 {
+        font-size: 1.8em;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
