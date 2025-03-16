@@ -115,7 +115,7 @@ input, textarea {
 
 /* Dodanie stylu CSS dla sekcji */
 #indoor-gardening {
-    max-width: 800px; /* Maksymalna szerokość kontenera */
+    max-width: 400px; /* Maksymalna szerokość kontenera */
     margin: 0 auto; /* Wyśrodkowanie sekcji */
     padding: 20px; /* Dodanie przestrzeni wewnętrznej */
     font-family: Arial, sans-serif; /* Zmiana czcionki */
