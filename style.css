@@ -112,3 +112,32 @@ input, textarea {
 .calendar-table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
+
+/* Dodanie stylu CSS dla sekcji */
+#indoor-gardening {
+    max-width: 800px; /* Maksymalna szerokość kontenera */
+    margin: 0 auto; /* Wyśrodkowanie sekcji */
+    padding: 20px; /* Dodanie przestrzeni wewnętrznej */
+    font-family: Arial, sans-serif; /* Zmiana czcionki */
+}
+
+/* Stylowanie nagłówków */
+#indoor-gardening h2, #indoor-gardening h3 {
+    text-align: center; /* Wyśrodkowanie nagłówków */
+    color: #2c6f2d; /* Zmiana koloru tekstu */
+}
+
+/* Stylowanie list i innych elementów */
+#indoor-gardening p, #indoor-gardening ul {
+    line-height: 1.6; /* Zwiększenie przestrzeni między wierszami */
+    font-size: 16px; /* Zwiększenie rozmiaru czcionki */
+}
+
+/* Stylowanie obrazków */
+#indoor-gardening img {
+    width: 100%; /* Dopasowanie obrazków do szerokości kontenera */
+    max-width: 600px; /* Maksymalna szerokość obrazków */
+    display: block; /* Zapewnienie wyświetlania obrazków jako blok */
+    margin: 20px auto; /* Wyśrodkowanie obrazków */
+}
+
